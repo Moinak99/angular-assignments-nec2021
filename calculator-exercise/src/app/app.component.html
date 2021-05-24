@@ -1,0 +1,44 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+   
+    <div class="container">
+      <div class="row justify-content-center">
+       <div class="form-group col-md-4 col-md-offset-5 align-center ">
+  <div class="card" style="width: 38rem;">
+    <h5 class="card-header">CALCULATOR EXERCISE</h5>
+    <div class="card-body">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"> Number1</label>
+          <input type="number" [(ngModel)]='num1' class="form-control" name="num1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Number2</label>
+          <input type="number" [(ngModel)]='num2' class="form-control" name="num2">
+        </div>
+        
+        <div class="d-flex flex-row justify-content-between">
+          <button type="submit" class="btn btn-warning" (click)="addition()">Addition</button> <br />
+        <button type="submit" class="btn btn-danger" (click)="subtraction()">Subtraction</button><br />
+        <button type="submit" class="btn btn-primary" (click)="multiplicatin()">Multiplication</button><br />
+        <button type="submit" class="btn btn-secondary" (click)="division()">Division</button> <br />
+        <button type="reset" class="btn btn-danger">reset</button> <br />
+
+        </div>
+        
+        
+      </form>
+    </div>
+    <div class="card-footer">
+      <h1>Result is: {{res}}</h1>
+    </div>
+  </div>
+</div>
+      </div>
+      </div>
+  </body>
+</html>
